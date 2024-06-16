@@ -30,6 +30,10 @@ void Update()
         Vector2 force = new Vector2(horizontalInput, 0) * speed * Time.deltaTime;
         rb.AddForce(force, ForceMode.Impulse);
     }
+    if (Input.GetKeyDown(KeyCode.Space) && IsGrounded())
+    {
+        rb.AddForce(Vector3.up * 3, ForceMode.Impulse);
+    }
 }
 
 bool IsGrounded()
