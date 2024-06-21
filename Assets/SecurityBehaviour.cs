@@ -18,7 +18,7 @@ public class SecurityBehaviour : MonoBehaviour
     private bool isChasing = false;
     private Vector3 initialRotation; 
 
-    public TextMeshProUGUI text; // Variabel untuk TextMeshProUGUI
+    public StatsText text;
 
     void Start()
     {
@@ -107,11 +107,11 @@ public class SecurityBehaviour : MonoBehaviour
     {
         if (!isChasing)
         {
-            text.text = "Patroli";
+            text.UpdateText("Patroli");
         }
         else
         {
-            text.text = "Mengejar!";
+            text.UpdateText("Mengejar");
         }
     }
 
