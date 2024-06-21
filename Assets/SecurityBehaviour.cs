@@ -1,5 +1,6 @@
 using UnityEngine;
-using TMPro; 
+using TMPro;
+using UnityEngine.Events;
 
 public class SecurityBehaviour : MonoBehaviour
 {
@@ -18,7 +19,8 @@ public class SecurityBehaviour : MonoBehaviour
     private bool isChasing = false;
     private Vector3 initialRotation; 
 
-    public StatsText text;
+    public UnityEvent onChasePlayer;
+    public UnityEvent onPatrol;
 
     void Start()
     {
@@ -107,11 +109,11 @@ public class SecurityBehaviour : MonoBehaviour
     {
         if (!isChasing)
         {
-            text.UpdateText("Patroli");
+            onPatrol.Invoke();
         }
         else
         {
-            text.UpdateText("Mengejar");
+            onChasePlayer.Invoke();
         }
     }
 
