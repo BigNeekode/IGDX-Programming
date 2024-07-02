@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1001574879920",
+    "firebase_url": "https://igdx-dgbl-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "igdx-dgbl",
+    "storage_bucket": "igdx-dgbl.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1001574879920:android:4220f65d95e84653bb6175",
+        "android_client_info": {
+          "package_name": "com.ExpectTension.ProgrammingIGDX"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyDfxnRN6LhcIfBGBoiqKkk14Emn3zUkI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
